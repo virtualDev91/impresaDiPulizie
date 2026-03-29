@@ -4,22 +4,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mada Impresa di Pulizie</title>
-<meta content="Mada Impresa di Pulizie offre servizi professionali di pulizia per uffici, condomini, appartamenti e negozi a Tombolo e provincia di Padova. Preventivi gratuiti e interventi rapidi." name="description"/>
+<title>Mada Impresa di Pulizie 2</title>
+<meta content="Mada Impresa di Pulizie 2 offre servizi professionali di pulizia per uffici, condomini, appartamenti e negozi. Preventivi gratuiti e interventi tempestivi." name="description"/>
 <style>
     :root {
-      --primary: #5ea3e6;
-      --primary-dark: #2f74c0;
-      --primary-deep: #1f5fa7;
-      --accent: #25d366;
-      --accent-soft: #eaf4ff;
-      --bg: #f4f9ff;
-      --bg-soft: #eef6ff;
-      --text: #17324d;
-      --muted: #67809a;
+      --primary: #1e4f8a;
+      --primary-dark: #0f2f57;
+      --primary-deep: #0a2344;
+      --accent: #ffffff;
+      --accent-soft: #eaf1fb;
+      --bg: #f5f8fc;
+      --bg-soft: #edf3fa;
+      --text: #0a2344;
+      --muted: #53667d;
       --white: #ffffff;
-      --line: #d8e7f7;
-      --shadow: 0 18px 42px rgba(23, 50, 77, 0.10);
+      --line: #d7e2ef;
+      --shadow: 0 18px 42px rgba(10, 35, 68, 0.12);
       --radius: 20px;
       --max: 1180px;
     }
@@ -30,7 +30,7 @@
       margin: 0;
       font-family: "Inter", Arial, Helvetica, sans-serif;
       color: var(--text);
-      background: var(--white);
+      background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
       line-height: 1.65;
     }
 
@@ -62,8 +62,8 @@
       z-index: 30;
       background: rgba(255,255,255,0.98);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(94, 163, 230, 0.14);
-      box-shadow: 0 10px 28px rgba(23, 50, 77, 0.06);
+      border-bottom: 1px solid rgba(31, 79, 138, 0.14);
+      box-shadow: 0 10px 28px rgba(10, 35, 68, 0.06);
     }
 
     .nav {
@@ -87,8 +87,8 @@
       border-radius: 22px;
       background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
       padding: 10px;
-      box-shadow: 0 16px 34px rgba(47, 116, 192, 0.12);
-      border: 1px solid rgba(94, 163, 230, 0.18);
+      box-shadow: 0 16px 34px rgba(10, 35, 68, 0.12);
+      border: 1px solid rgba(31, 79, 138, 0.18);
       flex-shrink: 0;
     }
 
@@ -119,6 +119,10 @@
       font-weight: 600;
     }
 
+    .menu .btn-primary {
+      color: var(--white);
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -137,7 +141,7 @@
       box-shadow: var(--shadow);
     }
 
-    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-primary:hover { background: linear-gradient(135deg, #0a2344 0%, #163f73 100%); }
 
     .btn-outline {
       background: rgba(255,255,255,0.92);
@@ -146,17 +150,18 @@
     }
 
     .btn-whatsapp {
-      background: var(--accent);
-      color: #073319;
-      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.2);
+      background: var(--white);
+      color: var(--primary-deep);
+      box-shadow: 0 14px 30px rgba(10, 35, 68, 0.10);
+      border: 1px solid var(--line);
     }
 
     .hero {
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at top left, #dbeeff 0%, rgba(219,238,255,0.9) 22%, rgba(255,255,255,0) 48%),
-        linear-gradient(135deg, #f7fbff 0%, #eef6ff 55%, #f9fcff 100%);
+        radial-gradient(circle at top left, rgba(31,79,138,0.18) 0%, rgba(31,79,138,0.08) 22%, rgba(255,255,255,0) 48%),
+        linear-gradient(135deg, #ffffff 0%, #eef4fb 55%, #f7faff 100%);
       padding: 88px 0 66px;
     }
 
@@ -173,12 +178,12 @@
       gap: 8px;
       padding: 9px 15px;
       border-radius: 999px;
-      background: var(--accent-soft);
+      background: rgba(31, 79, 138, 0.08);
       color: var(--primary-deep);
       font-size: 14px;
       font-weight: 700;
       margin-bottom: 20px;
-      border: 1px solid rgba(94, 163, 230, 0.22);
+      border: 1px solid rgba(31, 79, 138, 0.16);
     }
 
     h1, h2, h3 { margin-top: 0; line-height: 1.15; }
@@ -220,7 +225,7 @@
 
     .mini-points div {
       background: rgba(255,255,255,0.84);
-      border: 1px solid rgba(94, 163, 230, 0.18);
+      border: 1px solid rgba(31, 79, 138, 0.14);
       border-radius: 18px;
       padding: 14px 16px;
       font-weight: 700;
@@ -239,9 +244,9 @@
     .hero-main-image {
       border-radius: 32px;
       overflow: hidden;
-      box-shadow: 0 28px 60px rgba(23, 50, 77, 0.12);
+      box-shadow: 0 28px 60px rgba(10, 35, 68, 0.12);
       min-height: 250px;
-      border: 1px solid rgba(94, 163, 230, 0.2);
+      border: 1px solid rgba(31, 79, 138, 0.18);
     }
 
     .hero-main-image img {
@@ -263,10 +268,10 @@
       position: static;
       background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
       border-radius: 24px;
-      box-shadow: 0 16px 34px rgba(23, 50, 77, 0.08);
+      box-shadow: 0 16px 34px rgba(10, 35, 68, 0.08);
       padding: 22px;
       width: 100%;
-      border: 1px solid rgba(94, 163, 230, 0.18);
+      border: 1px solid rgba(31, 79, 138, 0.14);
     }
 
     .hero-card strong, .hero-badge-small strong {
@@ -312,11 +317,11 @@
       border-radius: 18px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, #e8f3ff 0%, #f7fbff 100%);
+      background: linear-gradient(135deg, #eaf1fb 0%, #ffffff 100%);
       color: var(--primary-deep);
       font-size: 24px;
       margin-bottom: 18px;
-      border: 1px solid rgba(94, 163, 230, 0.16);
+      border: 1px solid rgba(31, 79, 138, 0.14);
     }
 
     .service-card p, .about-card p, .review p, .contact-card p { color: var(--muted); }
@@ -401,7 +406,7 @@
       border-radius: 999px;
       font-weight: 700;
       font-size: 14px;
-      border: 1px solid rgba(94, 163, 230, 0.16);
+      border: 1px solid rgba(31, 79, 138, 0.14);
     }
 
     .reviews {
@@ -417,7 +422,7 @@
     }
 
     .stars {
-      color: #f59e0b;
+      color: var(--primary);
       letter-spacing: 2px;
       font-size: 18px;
       margin-bottom: 12px;
@@ -440,7 +445,7 @@
 
     .contact-card {
       background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
       border-radius: 24px;
       padding: 24px;
       backdrop-filter: blur(8px);
@@ -465,8 +470,8 @@
     }
 
     footer {
-      background: #17324d;
-      color: #d9e9fb;
+      background: var(--primary-deep);
+      color: #edf4fb;
       padding: 34px 0;
     }
 
@@ -528,16 +533,16 @@
 <div class="topbar">
 <div class="container topbar-content">
 <div>📍 Tombolo e provincia di Padova</div>
-<div>📞 347 383 5408   |   ✉️ madaimpresadipulizie@gmail.com</div>
+<div>📞 347 383 5408   |   ✉️ madaimpresadipulizie2@gmail.com</div>
 </div>
 </div>
 <header>
 <div class="container nav">
-<a class="logo-wrap" href="images/logo.jpg">
-<img alt="Logo Mada Impresa di Pulizie" class="logo-image" src="images/logo.jpg"/>
+<a class="logo-wrap" href="images/logo.png">
+<img alt="Logo Mada Impresa di Pulizie 2" class="logo-image" src="images/logo.png"/>
 <div class="logo-text">
-<strong>Mada Impresa di Pulizie</strong>
-<span>Eleganza, pulizia e affidabilità</span>
+<strong>Mada Impresa di Pulizie 2</strong>
+<span>Professionalità e affidabilità</span>
 </div>
 </a>
 <nav class="menu">
@@ -552,10 +557,10 @@
 <section class="hero" id="home">
 <div class="container hero-grid">
 <div>
-<div class="eyebrow">✨ Pulizie professionali con stile e affidabilità</div>
-<h1>Mada Impresa di Pulizie</h1>
+<div class="eyebrow">✨ Pulizie professionali e affidabilità</div>
+<h1>Mada Impresa di Pulizie 2</h1>
 <p class="lead">
-          Servizi professionali di pulizia per uffici, condomini, appartamenti, negozi e post-ristrutturazione a Tombolo e provincia di Padova. Interventi affidabili, puntuali e con grande attenzione ai dettagli.
+          Servizi professionali di pulizia per uffici, condomini, appartamenti, negozi e interventi post-ristrutturazione. Interventi affidabili, puntuali e curati nei dettagli.
         </p>
 <div class="hero-actions">
 <a class="btn btn-primary" href="tel:3473835408">📞 Chiama ora</a>
@@ -564,8 +569,8 @@
 </div>
 <div class="hero-info-row">
 <div class="hero-badge-small">
-<strong>Servizio su misura</strong>
-<span>Pulizie regolari o straordinarie, in base alle esigenze di casa, ufficio o condominio.</span>
+<strong>Servizi su misura</strong>
+<span>Pulizie ordinarie e straordinarie, in base alle vostre esigenze.</span>
 </div>
 <div class="hero-card">
 <strong>Affidabilità e cura</strong>
@@ -575,7 +580,7 @@
 </div>
 <div class="hero-visual">
 <div class="hero-main-image">
-<img alt="Addetta alle pulizie professionali in ambiente moderno" src="images/initial.jpg">
+<img alt="Addetta alle pulizie professionali in ambiente moderno" src="images/initial.png">
 </div>
 </div>
 </div>
@@ -584,25 +589,25 @@
 <div class="container">
 <div class="section-head">
 <div>
-<h2>I nostri servizi</h2>
-<p class="lead">Una presenza professionale per ambienti sempre ordinati, puliti e accoglienti.</p>
+<h2>Le nostre attività principali</h2>
+<p class="lead">Servizi professionali per ambienti residenziali, commerciali e specializzati.</p>
 </div>
 </div>
 <div class="services-grid">
 <article class="service-card">
-<div class="service-icon">🏢</div>
-<h3>Pulizie uffici</h3>
-<p>Scrivanie, pavimenti, bagni, vetrate e spazi comuni puliti con costanza e precisione.</p>
-</article>
-<article class="service-card">
 <div class="service-icon">🏠</div>
-<h3>Pulizie appartamenti</h3>
-<p>Interventi accurati per abitazioni private, pulizie profonde e ambienti pronti da vivere.</p>
+<h3>Ambienti residenziali</h3>
+<p>Appartamenti, condomini e spazi abitativi curati con interventi regolari o approfonditi.</p>
 </article>
 <article class="service-card">
-<div class="service-icon">🏬</div>
-<h3>Pulizie negozi</h3>
-<p>Locali commerciali sempre in ordine, puliti e più piacevoli per clienti e personale.</p>
+<div class="service-icon">🩺</div>
+<h3>Studi medici e ambulatori</h3>
+<p>Igiene e ordine per ambienti sanitari che richiedono attenzione, precisione e continuità.</p>
+</article>
+<article class="service-card">
+<div class="service-icon">🏢</div>
+<h3>Uffici e spazi commerciali</h3>
+<p>Scrivanie, pavimenti, bagni e aree comuni puliti con costanza e professionalità.</p>
 </article>
 <article class="service-card">
 <div class="service-icon">🧹</div>
@@ -610,14 +615,24 @@
 <p>Scale, corridoi, ingressi, ascensori e spazi comuni curati con programmi personalizzati.</p>
 </article>
 <article class="service-card">
-<div class="service-icon">🪟</div>
-<h3>Pulizia vetri</h3>
-<p>Finestre, superfici vetrate e vetrine pulite con attenzione, senza aloni e senza fretta.</p>
-</article>
-<article class="service-card">
 <div class="service-icon">🛠️</div>
 <h3>Post-ristrutturazione</h3>
-<p>Rimozione di polvere e residui per rendere gli ambienti subito più puliti e presentabili.</p>
+<p>Rimozione di polvere e residui per restituire ambienti subito più puliti e presentabili.</p>
+</article>
+<article class="service-card">
+<div class="service-icon">🏋️</div>
+<h3>Palestre e centri sportivi</h3>
+<p>Spazi dedicati al benessere, ordinati e piacevoli da frequentare.</p>
+</article>
+<article class="service-card">
+<div class="service-icon">🌿</div>
+<h3>Aree verdi e giardini</h3>
+<p>Zone esterne curate con attenzione per un aspetto sempre ordinato e accogliente.</p>
+</article>
+<article class="service-card">
+<div class="service-icon">🎉</div>
+<h3>Eventi e manifestazioni</h3>
+<p>Interventi di pulizia per spazi temporanei, allestimenti e ambienti ad alta affluenza.</p>
 </article>
 </div>
 </div>
@@ -632,14 +647,14 @@
 <div class="about-card">
 <div class="about-content">
 <h2>Chi siamo</h2>
-<p class="lead">Mada Impresa di Pulizie offre servizi professionali per privati, uffici, condomini e attività commerciali a Tombolo e nella provincia di Padova.</p>
+<p class="lead">Mada Impresa di Pulizie 2 offre servizi professionali per ambienti residenziali, medici, commerciali e sportivi a Tombolo e in provincia di Padova.</p>
 <p>
             Lavoriamo con serietà, rapidità e attenzione ai dettagli. Ogni intervento viene organizzato in base alle reali esigenze del cliente, con soluzioni personalizzate e preventivi chiari.
           </p>
 <div class="checklist">
 <div class="check">✅ Personale affidabile e attento ai dettagli</div>
 <div class="check">✅ Prodotti e attrezzature professionali</div>
-<div class="check">✅ Servizi personalizzati per casa e lavoro</div>
+<div class="check">✅ Servizi personalizzati per casa, lavoro e spazi esterni</div>
 <div class="check">✅ Contatto rapido via telefono e WhatsApp</div>
 </div>
 </div>
@@ -651,7 +666,7 @@
 <div class="gallery-grid">
 <div class="gallery-item large">
 <img alt="Pulizia professionale di ufficio con detergente su scrivania" src="images/uffici.jpg"/>
-<div class="gallery-label">Pulizie uffici</div>
+<div class="gallery-label">Uffici e spazi commerciali</div>
 </div>
 <div class="gallery-item">
 <img alt="Pulizia professionale di vetri e finestre" src="images/vetro.jpg"/>
@@ -663,7 +678,7 @@
 </div>
 <div class="gallery-item">
 <img alt="Appartamento pulito e ordinato" src="images/appartamento.jpg"/>
-<div class="gallery-label">Ambienti domestici</div>
+<div class="gallery-label">Ambienti residenziali</div>
 </div>
 <div class="gallery-item">
 <img alt="Ingresso condominiale pulito" src="images/scale.jpg"/>
@@ -682,17 +697,17 @@
 <div class="reviews">
 <article class="review">
 <div class="stars">★★★★★</div>
-<p>“Ottimo servizio e buon prezzo! Consigliabile!”</p>
+<p>“Ottimo servizio e buon prezzo. Consigliatissimo!”</p>
 <strong>Cliente verificato</strong>
 </article>
 <article class="review">
 <div class="stars">★★★★★</div>
-<p>“Impresa seria, personale onesto. Caratteristiche su cui un cliente può far affidamento. La consiglio.”</p>
+<p>“Impresa seria, personale onesto. Caratteristiche su cui un cliente può fare affidamento. La consiglio.”</p>
 <strong>Cliente verificato</strong>
 </article>
 <article class="review">
 <div class="stars">★★★★★</div>
-<p>“Disponibili, professionali, simpatici. Personale specializzato e in gamba.”</p>
+<p>“Disponibili, professionali e simpatici. Personale specializzato e molto preparato.”</p>
 <strong>Cliente verificato</strong>
 </article>
 </div>
@@ -704,7 +719,7 @@
 <div class="contact-grid">
 <div>
 <h2>Richiedi un preventivo gratuito</h2>
-<p class="lead">Contattaci per un sopralluogo o per ricevere un preventivo personalizzato per casa, ufficio o condominio.</p>
+<p class="lead">Contattaci per un sopralluogo o per ricevere un preventivo personalizzato per casa, ufficio, negozio o altra attività.</p>
 <div class="hero-actions">
 <a class="btn btn-whatsapp" href="https://wa.me/393473835408?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20un%20servizio%20di%20pulizia" rel="noopener" target="_blank">💬 WhatsApp</a>
 <a class="btn btn-outline" href="tel:3473835408">📞 347 383 5408</a>
@@ -714,7 +729,7 @@
 <h3>Contatti</h3>
 <div class="contact-list">
 <a href="tel:3473835408">📞 347 383 5408</a>
-<a href="mailto:madaimpresadipulizie@gmail.com">✉️ madaimpresadipulizie@gmail.com</a>
+<a href="mailto:madaimpresadipulizie2@gmail.com">✉️ madaimpresadipulizie2@gmail.com</a>
 <div>📍 Via degli Ezzelini 23, 35019 Tombolo (PD)</div>
 </div>
 </div>
@@ -725,11 +740,11 @@
 <footer>
 <div class="container footer-grid">
 <div>
-<strong>Mada Impresa di Pulizie</strong><br/>
-        Impresa di pulizie a Tombolo e provincia di Padova
+<strong>Mada Impresa di Pulizie 2</strong><br/>
+        Impresa di pulizie a Tombolo e in provincia di Padova
       </div>
 <div>
-        © 2026 Mada Impresa di Pulizie - Tutti i diritti riservati
+        © 2026 Mada Impresa di Pulizie 2 - Tutti i diritti riservati
       </div>
 </div>
 </footer>
