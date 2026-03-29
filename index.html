@@ -453,6 +453,71 @@
 
     .contact-card p, .contact-wrap .lead { color: rgba(255,255,255,0.85); }
 
+    .contact-form {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .contact-form label {
+      font-weight: 600;
+      font-size: 14px;
+      color: rgba(255,255,255,0.95);
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.24);
+      background: rgba(255,255,255,0.96);
+      color: var(--primary-deep);
+      padding: 12px 14px;
+      font: inherit;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form .form-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .contact-form .consent input {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      padding: 0;
+    }
+
+    .contact-form button {
+      justify-self: start;
+      cursor: pointer;
+    }
+
+    .form-help {
+      font-size: 12px;
+      color: rgba(255,255,255,0.82);
+      margin: 0;
+    }
+
     .contact-list {
       display: grid;
       gap: 14px;
@@ -544,6 +609,7 @@
       .about-image { min-height: 300px; }
       .contact-wrap { padding: 30px 22px; }
       section { padding: 68px 0; }
+      .contact-form .form-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -744,7 +810,45 @@
 </div>
 </div>
 <div class="contact-card">
-<h3>Contatti</h3>
+<h3>Richiesta rapida</h3>
+<form action="mailto:madaimpresadipulizie2@gmail.com" class="contact-form" enctype="text/plain" method="post">
+<div class="form-grid">
+<div>
+<label for="nome">Nome e cognome *</label>
+<input id="nome" name="nome" required="" type="text"/>
+</div>
+<div>
+<label for="telefono">Telefono</label>
+<input id="telefono" name="telefono" pattern="[0-9+\s]{7,20}" placeholder="Es. 347 123 4567" type="tel"/>
+</div>
+</div>
+<div>
+<label for="email">Email *</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div>
+<label for="servizio">Servizio richiesto *</label>
+<select id="servizio" name="servizio" required="">
+<option value="">Seleziona un servizio</option>
+<option>Pulizie uffici e negozi</option>
+<option>Pulizie condomini</option>
+<option>Pulizie appartamenti</option>
+<option>Post-ristrutturazione</option>
+<option>Altro</option>
+</select>
+</div>
+<div>
+<label for="messaggio">Dettagli richiesta *</label>
+<textarea id="messaggio" name="messaggio" required=""></textarea>
+</div>
+<label class="consent" for="consenso">
+<input id="consenso" name="consenso_privacy" required="" type="checkbox" value="acconsento"/>
+<span>Acconsento al trattamento dei dati personali per la gestione della richiesta di preventivo, come descritto nell’informativa privacy in fondo alla pagina.</span>
+</label>
+<button class="btn btn-whatsapp" type="submit">Invia richiesta</button>
+<p class="form-help">I campi con * sono obbligatori. In alternativa puoi contattarci via telefono o WhatsApp.</p>
+</form>
+<h3>Contatti diretti</h3>
 <div class="contact-list">
 <a href="tel:3473835408">📞 347 383 5408</a>
 <a href="mailto:madaimpresadipulizie2@gmail.com">✉️ madaimpresadipulizie2@gmail.com</a>
