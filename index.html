@@ -6,6 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Mada Impresa di Pulizie 2</title>
 <meta content="Mada Impresa di Pulizie 2 offre servizi professionali di pulizia per uffici, condomini, appartamenti e negozi. Preventivi gratuiti e interventi tempestivi." name="description"/>
+<meta name="keywords" content="pulizie professionali, pulizie uffici, pulizie condomini, pulizie appartamenti, servizi di pulizia, Tombolo, Padova, San Martino di Lupari, Castelfranco, Camposampiero, Cittadella, Galliera Veneta, Villa del Conte, Loreggia, Piazzola sul Brenta">
+<meta name="robots" content="index, follow">
 <style>
     :root {
       --primary: #1e4f8a;
@@ -281,7 +283,7 @@
       margin-bottom: 6px;
     }
 
-    section { padding: 84px 0; }
+    section { padding: 100px 0; }
 
     .section-muted { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%); }
 
@@ -611,6 +613,15 @@
       section { padding: 68px 0; }
       .contact-form .form-grid { grid-template-columns: 1fr; }
     }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+      .mobile-menu {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
@@ -629,14 +640,13 @@
 <span>Professionalità e affidabilità</span>
 </div>
 </a>
-<nav class="menu">
-<a href="#servizi">Servizi</a>
-<a href="#chi-siamo">Chi siamo</a>
-<a href="#galleria">Galleria</a>
-<a href="#recensioni">Recensioni</a>
-<a href="#privacy">Privacy</a>
-<a href="#note-legali">Note legali</a>
-<a class="btn btn-primary" href="#contatti">Contattaci</a>
+<nav class="menu" role="navigation">
+  <a href="#servizi" role="menuitem">Servizi</a>
+  <a href="#chi-siamo" role="menuitem">Chi siamo</a>
+  <a href="#galleria" role="menuitem">Galleria</a>
+  <a href="#recensioni" role="menuitem">Recensioni</a>
+  <a href="#privacy" role="menuitem">Privacy</a>
+  <a class="btn btn-primary" href="#contatti" role="menuitem">Contattaci</a>
 </nav>
 </div>
 </header>
@@ -651,7 +661,8 @@
 <div class="hero-actions">
 <a class="btn btn-primary" href="tel:3473835408">📞 Chiama ora</a>
 <a class="btn btn-whatsapp" href="https://wa.me/393473835408?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20un%20servizio%20di%20pulizia" rel="noopener" target="_blank">💬 Scrivici su WhatsApp</a>
-<a class="btn btn-outline" href="#servizi">Scopri i servizi</a>
+<a class="btn btn-outline" href="#servizi">Scopri i nostri servizi</a>
+<a class="btn btn-outline" href="#contatti">Richiedi un preventivo</a>
 </div>
 <div class="hero-info-row">
 <div class="hero-badge-small">
@@ -733,7 +744,7 @@
 <div class="about-card">
 <div class="about-content">
 <h2>Chi siamo</h2>
-<p class="lead">Mada Impresa di Pulizie 2 offre servizi professionali per ambienti residenziali, medici, commerciali e sportivi a Tombolo e in provincia di Padova.</p>
+<p class="lead">Mada Impresa di Pulizie 2 offre servizi professionali per ambienti residenziali, medici, commerciali e sportivi a Tombolo, in provincia di Padova e nei comuni vicini come San Martino di Lupari, Castelfranco Veneto, Camposampiero, Cittadella, Galliera Veneta, Villa del Conte, Loreggia e Piazzola sul Brenta.</p>
 <p>
             Lavoriamo con serietà, rapidità e attenzione ai dettagli. Ogni intervento viene organizzato in base alle reali esigenze del cliente, con soluzioni personalizzate e preventivi chiari.
           </p>
@@ -874,7 +885,7 @@
         © 2026 Mada Impresa di Pulizie 2 - Tutti i diritti riservati
       </div>
 </div>
-<div class="container legal-note">
+<div class="container legal-note" id="privacy">
 <p><strong>Informativa privacy (artt. 13-14 Reg. UE 2016/679 - GDPR):</strong> i dati personali inviati via telefono, email, WhatsApp o tramite il modulo di contatto sono trattati esclusivamente per rispondere alle richieste di contatto e preventivo e per eventuali obblighi di legge.</p>
 <p><strong>Titolare del trattamento:</strong> Mada Impresa di Pulizie 2, Via degli Ezzelini 23, 35019 Tombolo (PD), email: <a href="mailto:madaimpresadipulizie2@gmail.com">madaimpresadipulizie2@gmail.com</a>, tel: <a href="tel:3473835408">347 383 5408</a>.</p>
 <p><strong>Base giuridica:</strong> esecuzione di misure precontrattuali su richiesta dell’interessato (art. 6, par. 1, lett. b GDPR) e, ove applicabile, consenso (art. 6, par. 1, lett. a GDPR).</p>
@@ -884,5 +895,7 @@
 <p><strong>Cookie:</strong> il sito non utilizza cookie di profilazione o marketing. Sono presenti solo cookie tecnici eventualmente necessari al funzionamento.</p>
 </div>
 </footer>
+<!-- Back to Top Button -->
+<a href="#home" class="back-to-top" style="position: fixed; bottom: 20px; right: 20px; background: var(--primary); color: var(--white); padding: 10px 15px; border-radius: 50%; box-shadow: var(--shadow); text-align: center; text-decoration: none; font-size: 18px; z-index: 1000;">⬆</a>
 </body>
 </html>
